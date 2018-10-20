@@ -1,0 +1,487 @@
+2018-10-20 18:05:16.5116 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-10-20 18:05:17.0740 Debug Found assembly location directory: 'C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2018-10-20 18:05:17.0740 Debug Search for auto loading files in location: C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-10-20 18:05:17.1566 Debug Found assembly location directory: 'c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1' (BuildingBlocksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2018-10-20 18:05:17.1566 Debug Search for auto loading files in location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:05:17.1566 Debug Auto loading based on AppDomain-BaseDirectory found location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:05:17.1566 Debug Search for auto loading files in location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:05:17.1566 Debug Start auto loading, location: C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-10-20 18:05:17.1566 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-10-20 18:05:17.1566 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-10-20 18:05:17.1566 Debug Auto loading done
+2018-10-20 18:05:17.1653 Info Message Template Auto Format enabled
+2018-10-20 18:05:17.1653 Info Loading assembly: NLog.Extended
+2018-10-20 18:05:18.2059 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2018-10-20 18:05:18.2325 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2018-10-20 18:05:18.3443 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.3608 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:05:18.3918 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-10-20 18:05:18.6406 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-10-20 18:05:18.6406 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.6406 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.6780 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.6780 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:05:18.6807 Trace  Scanning Property Culture '' System.Globalization
+2018-10-20 18:05:18.6807 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:05:18.6807 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:05:18.6807 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.6807 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.6807 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.6807 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-10-20 18:05:18.6961 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.6961 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:05:18.7997 Debug Setting 'FileTarget.name' to 'logfile'
+2018-10-20 18:05:18.7997 Debug Setting 'FileTarget.fileName' to 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'
+2018-10-20 18:05:18.7997 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.7997 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:05:18.8046 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2018-10-20 18:05:18.8046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.8046 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:05:18.8046 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-10-20 18:05:18.8046 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-10-20 18:05:18.8046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.8046 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.8046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.8046 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:05:18.8046 Trace  Scanning Property Culture '' System.Globalization
+2018-10-20 18:05:18.8046 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:05:18.8046 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:05:18.8046 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.8046 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.8046 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:05:18.8046 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:05:18.8046 Info Adding target File Target[logfile]
+2018-10-20 18:05:18.8207 Debug Registered target logfile: NLog.Targets.FileTarget
+2018-10-20 18:05:18.8207 Trace ParseRulesElement
+2018-10-20 18:05:18.8207 Info Configured from an XML element in c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI/nlog.config...
+2018-10-20 18:05:18.8604 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2018-10-20 18:05:18.8694 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2018-10-20 18:05:18.8694 Debug --- NLog configuration dump ---
+2018-10-20 18:05:18.8694 Debug Targets:
+2018-10-20 18:05:18.8694 Debug File Target[logfile]
+2018-10-20 18:05:18.8694 Debug Rules:
+2018-10-20 18:05:18.8694 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2018-10-20 18:05:18.8694 Debug --- End of NLog configuration dump ---
+2018-10-20 18:05:18.8694 Trace FindReachableObject<System.Object>:
+2018-10-20 18:05:18.8694 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2018-10-20 18:05:18.8694 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-10-20 18:05:18.8694 Trace  Scanning FileTarget 'File Target[logfile]'
+2018-10-20 18:05:18.8694 Trace   Scanning Property FileName ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-10-20 18:05:18.8694 Trace   Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:05:18.8837 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.8837 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.8837 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:05:18.8837 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.8837 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-10-20 18:05:18.8837 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:05:18.8837 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.8837 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:05:18.8837 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.8837 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:05:18.8837 Trace     Scanning Property Culture '' System.Globalization
+2018-10-20 18:05:18.8837 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:05:18.8837 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:05:18.8837 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.8837 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.8837 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.8837 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:05:18.8837 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-10-20 18:05:18.8837 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-10-20 18:05:18.8837 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-10-20 18:05:18.8837 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-10-20 18:05:18.8837 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-10-20 18:05:18.8837 Info Found 14 configuration items
+2018-10-20 18:05:18.8991 Trace Initializing Layout Renderer: ${message}
+2018-10-20 18:05:18.8991 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:05:18.8991 Trace Initializing Layout Renderer: ${level}
+2018-10-20 18:05:18.8991 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2018-10-20 18:05:18.8991 Trace FindReachableObject<System.Object>:
+2018-10-20 18:05:18.8991 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:05:18.8991 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.8991 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.9335 Trace Initializing Layout Renderer: ${uppercase}
+2018-10-20 18:05:18.9335 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:05:18.9335 Trace Initializing Layout Renderer: ${longdate}
+2018-10-20 18:05:18.9335 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2018-10-20 18:05:18.9335 Trace FindReachableObject<System.Object>:
+2018-10-20 18:05:18.9335 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:05:18.9335 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.9335 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:05:18.9335 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.9335 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:05:18.9335 Trace   Scanning Property Culture '' System.Globalization
+2018-10-20 18:05:18.9335 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:05:18.9335 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:05:18.9335 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.9335 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:05:18.9335 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.9335 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:05:18.9335 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:05:18.9335 Trace Initializing Layout Renderer: ${shortdate}
+2018-10-20 18:05:18.9335 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:05:18.9335 Trace Initializing 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'
+2018-10-20 18:05:18.9335 Trace FindReachableObject<System.Object>:
+2018-10-20 18:05:18.9335 Trace Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:05:18.9335 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:05:18.9464 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.9464 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:05:18.9464 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:05:18.9464 Trace Initializing File Target[logfile]
+2018-10-20 18:05:18.9464 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-10-20 18:05:18.9464 Trace Scanning FileTarget 'File Target[logfile]'
+2018-10-20 18:05:18.9464 Trace  Scanning Property FileName ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-10-20 18:05:18.9464 Trace  Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:05:18.9464 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-10-20 18:05:18.9464 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:05:18.9464 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-10-20 18:05:18.9464 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-10-20 18:05:18.9464 Trace File Target[logfile] has 2 layouts
+2018-10-20 18:05:18.9464 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2018-10-20 18:05:19.0053 Debug Watching path 'c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI' filter 'nlog.config' for changes.
+2018-10-20 18:06:04.1667 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-10-20 18:06:04.2085 Debug Found assembly location directory: 'C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2018-10-20 18:06:04.2173 Debug Search for auto loading files in location: C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-10-20 18:06:04.2284 Debug Found assembly location directory: 'c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1' (BuildingBlocksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2018-10-20 18:06:04.2284 Debug Search for auto loading files in location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:06:04.2284 Debug Auto loading based on AppDomain-BaseDirectory found location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:06:04.2284 Debug Search for auto loading files in location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:06:04.2422 Debug Start auto loading, location: C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-10-20 18:06:04.2422 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-10-20 18:06:04.2422 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-10-20 18:06:04.2422 Debug Auto loading done
+2018-10-20 18:06:04.2422 Info Message Template Auto Format enabled
+2018-10-20 18:06:04.2422 Info Loading assembly: NLog.Extended
+2018-10-20 18:06:04.2858 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2018-10-20 18:06:04.2858 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2018-10-20 18:06:04.3054 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3054 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:04.3054 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-10-20 18:06:04.3292 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-10-20 18:06:04.3292 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3292 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.3292 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3292 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:04.3292 Trace  Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:04.3370 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:04.3370 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:04.3370 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.3370 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.3370 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3370 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-10-20 18:06:04.3370 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3370 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:04.3370 Debug Setting 'FileTarget.name' to 'logfile'
+2018-10-20 18:06:04.3525 Debug Setting 'FileTarget.fileName' to 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'
+2018-10-20 18:06:04.3525 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3525 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:06:04.3525 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2018-10-20 18:06:04.3525 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3525 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:04.3525 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-10-20 18:06:04.3525 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-10-20 18:06:04.3525 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3525 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.3525 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3525 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:04.3525 Trace  Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:04.3525 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:04.3525 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:04.3525 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.3525 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.3525 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:04.3525 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:04.3525 Info Adding target File Target[logfile]
+2018-10-20 18:06:04.3525 Debug Registered target logfile: NLog.Targets.FileTarget
+2018-10-20 18:06:04.3686 Trace ParseRulesElement
+2018-10-20 18:06:04.3686 Info Configured from an XML element in c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI/nlog.config...
+2018-10-20 18:06:04.3876 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2018-10-20 18:06:04.3876 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2018-10-20 18:06:04.4008 Debug --- NLog configuration dump ---
+2018-10-20 18:06:04.4008 Debug Targets:
+2018-10-20 18:06:04.4008 Debug File Target[logfile]
+2018-10-20 18:06:04.4008 Debug Rules:
+2018-10-20 18:06:04.4008 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2018-10-20 18:06:04.4008 Debug --- End of NLog configuration dump ---
+2018-10-20 18:06:04.4008 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:04.4008 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2018-10-20 18:06:04.4008 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-10-20 18:06:04.4008 Trace  Scanning FileTarget 'File Target[logfile]'
+2018-10-20 18:06:04.4008 Trace   Scanning Property FileName ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-10-20 18:06:04.4008 Trace   Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:06:04.4008 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4008 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4008 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:06:04.4008 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4008 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-10-20 18:06:04.4147 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:06:04.4147 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4147 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:04.4147 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4147 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:04.4147 Trace     Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:04.4147 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:04.4147 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:04.4147 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4147 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.4147 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4147 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:04.4147 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-10-20 18:06:04.4147 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-10-20 18:06:04.4147 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-10-20 18:06:04.4147 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-10-20 18:06:04.4147 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4147 Info Found 14 configuration items
+2018-10-20 18:06:04.4147 Trace Initializing Layout Renderer: ${message}
+2018-10-20 18:06:04.4147 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:04.4147 Trace Initializing Layout Renderer: ${level}
+2018-10-20 18:06:04.4297 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2018-10-20 18:06:04.4297 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:04.4297 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:04.4297 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4297 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.4297 Trace Initializing Layout Renderer: ${uppercase}
+2018-10-20 18:06:04.4297 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:04.4297 Trace Initializing Layout Renderer: ${longdate}
+2018-10-20 18:06:04.4297 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2018-10-20 18:06:04.4297 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:04.4297 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:06:04.4297 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4297 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:04.4297 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4297 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:04.4297 Trace   Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:04.4297 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:04.4297 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:04.4297 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4297 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:04.4461 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4461 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:04.4461 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:04.4461 Trace Initializing Layout Renderer: ${shortdate}
+2018-10-20 18:06:04.4461 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:04.4461 Trace Initializing 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'
+2018-10-20 18:06:04.4461 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:04.4461 Trace Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:06:04.4461 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:04.4461 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4461 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:06:04.4461 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:04.4461 Trace Initializing File Target[logfile]
+2018-10-20 18:06:04.4461 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-10-20 18:06:04.4461 Trace Scanning FileTarget 'File Target[logfile]'
+2018-10-20 18:06:04.4461 Trace  Scanning Property FileName ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-10-20 18:06:04.4461 Trace  Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:06:04.4461 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-10-20 18:06:04.4461 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:06:04.4461 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-10-20 18:06:04.4461 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-10-20 18:06:04.4624 Trace File Target[logfile] has 2 layouts
+2018-10-20 18:06:04.4624 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2018-10-20 18:06:04.4624 Debug Watching path 'c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI' filter 'nlog.config' for changes.
+2018-10-20 18:06:16.6894 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-10-20 18:06:16.8269 Debug Found assembly location directory: 'C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2018-10-20 18:06:16.8468 Debug Search for auto loading files in location: C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-10-20 18:06:16.9043 Debug Found assembly location directory: 'c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1' (BuildingBlocksAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2018-10-20 18:06:16.9274 Debug Search for auto loading files in location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:06:16.9650 Debug Auto loading based on AppDomain-BaseDirectory found location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:06:16.9650 Debug Search for auto loading files in location: c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1
+2018-10-20 18:06:16.9650 Debug Start auto loading, location: C:\Users\Sophia\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-10-20 18:06:16.9650 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-10-20 18:06:16.9650 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-10-20 18:06:16.9650 Debug Auto loading done
+2018-10-20 18:06:16.9650 Info Message Template Auto Format enabled
+2018-10-20 18:06:16.9870 Info Loading assembly: NLog.Extended
+2018-10-20 18:06:17.3054 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2018-10-20 18:06:17.3054 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2018-10-20 18:06:17.3566 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.3724 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:17.3831 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-10-20 18:06:17.4555 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-10-20 18:06:17.4555 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.4555 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.4555 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.4555 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:17.4555 Trace  Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:17.4653 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:17.4653 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:17.4653 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.4773 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.4773 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.4773 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-10-20 18:06:17.4773 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.4773 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:17.5050 Debug Setting 'FileTarget.name' to 'logfile'
+2018-10-20 18:06:17.5050 Debug Setting 'FileTarget.fileName' to 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'
+2018-10-20 18:06:17.5050 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.5159 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:06:17.5252 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2018-10-20 18:06:17.5252 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.5252 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:17.5252 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-10-20 18:06:17.5252 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-10-20 18:06:17.5252 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.5252 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.5252 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.5252 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:17.5252 Trace  Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:17.5395 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:17.5395 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:17.5395 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.5395 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.5395 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-10-20 18:06:17.5395 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:17.5395 Info Adding target File Target[logfile]
+2018-10-20 18:06:17.5395 Debug Registered target logfile: NLog.Targets.FileTarget
+2018-10-20 18:06:17.5395 Trace ParseRulesElement
+2018-10-20 18:06:17.5623 Info Configured from an XML element in c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI/nlog.config...
+2018-10-20 18:06:17.5741 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2018-10-20 18:06:17.5741 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2018-10-20 18:06:17.5914 Debug --- NLog configuration dump ---
+2018-10-20 18:06:17.5914 Debug Targets:
+2018-10-20 18:06:17.5914 Debug File Target[logfile]
+2018-10-20 18:06:17.5914 Debug Rules:
+2018-10-20 18:06:17.5914 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2018-10-20 18:06:17.5914 Debug --- End of NLog configuration dump ---
+2018-10-20 18:06:17.6032 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:17.6032 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2018-10-20 18:06:17.6032 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-10-20 18:06:17.6032 Trace  Scanning FileTarget 'File Target[logfile]'
+2018-10-20 18:06:17.6032 Trace   Scanning Property FileName ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-10-20 18:06:17.6032 Trace   Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:06:17.6032 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6032 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6032 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:06:17.6032 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6032 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-10-20 18:06:17.6032 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:06:17.6032 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6032 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:17.6032 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6032 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:17.6032 Trace     Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:17.6032 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:17.6176 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:17.6176 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6176 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.6176 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6176 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:17.6176 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-10-20 18:06:17.6176 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-10-20 18:06:17.6176 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-10-20 18:06:17.6176 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-10-20 18:06:17.6176 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6176 Info Found 14 configuration items
+2018-10-20 18:06:17.6176 Trace Initializing Layout Renderer: ${message}
+2018-10-20 18:06:17.6176 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:17.6176 Trace Initializing Layout Renderer: ${level}
+2018-10-20 18:06:17.6335 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2018-10-20 18:06:17.6335 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:17.6335 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:17.6335 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6335 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.6335 Trace Initializing Layout Renderer: ${uppercase}
+2018-10-20 18:06:17.6335 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:17.6335 Trace Initializing Layout Renderer: ${longdate}
+2018-10-20 18:06:17.6335 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2018-10-20 18:06:17.6502 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:17.6502 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:06:17.6502 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6502 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-10-20 18:06:17.6502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6502 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-10-20 18:06:17.6502 Trace   Scanning Property Culture '' System.Globalization
+2018-10-20 18:06:17.6502 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-10-20 18:06:17.6502 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-10-20 18:06:17.6502 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6502 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-10-20 18:06:17.6502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6502 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-10-20 18:06:17.6502 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:17.6502 Trace Initializing Layout Renderer: ${shortdate}
+2018-10-20 18:06:17.6502 Trace Initializing Layout Renderer: ${literal}
+2018-10-20 18:06:17.6502 Trace Initializing 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'
+2018-10-20 18:06:17.6502 Trace FindReachableObject<System.Object>:
+2018-10-20 18:06:17.6502 Trace Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:06:17.6502 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-10-20 18:06:17.6502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6502 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-10-20 18:06:17.6502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-10-20 18:06:17.6653 Trace Initializing File Target[logfile]
+2018-10-20 18:06:17.6653 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-10-20 18:06:17.6653 Trace Scanning FileTarget 'File Target[logfile]'
+2018-10-20 18:06:17.6653 Trace  Scanning Property FileName ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-10-20 18:06:17.6653 Trace  Scanning SimpleLayout ''C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/${shortdate}_logfile.txt''
+2018-10-20 18:06:17.6653 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-10-20 18:06:17.6653 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-10-20 18:06:17.6653 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-10-20 18:06:17.6653 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-10-20 18:06:17.6653 Trace File Target[logfile] has 2 layouts
+2018-10-20 18:06:17.6653 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2018-10-20 18:06:17.7046 Debug Watching path 'c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI' filter 'nlog.config' for changes.
+2018-10-20 18:06:23.9993 Debug Targets for LoggerService.LoggerManager by level:
+2018-10-20 18:06:23.9993 Debug Trace =>
+2018-10-20 18:06:24.0198 Debug Debug => logfile
+2018-10-20 18:06:24.0248 Debug Info => logfile
+2018-10-20 18:06:24.0248 Debug Warn => logfile
+2018-10-20 18:06:24.0248 Debug Error => logfile
+2018-10-20 18:06:24.0248 Debug Fatal => logfile
+2018-10-20 18:06:24.1017 Debug FileTarget(Name=logfile): Process file 'C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/2018-10-20_logfile.txt' on startup
+2018-10-20 18:06:24.1017 Debug Creating file appender: C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/2018-10-20_logfile.txt
+2018-10-20 18:06:24.1189 Trace Opening C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/2018-10-20_logfile.txt with allowFileSharedWriting=False
+2018-10-20 18:06:24.2134 Trace Opening C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/2018-10-20_logfile.txt with allowFileSharedWriting=False
+2018-10-20 18:06:24.2636 Trace Opening C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/2018-10-20_logfile.txt with allowFileSharedWriting=False
+2018-10-20 18:06:24.2636 Trace Opening C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI/logs/2018-10-20_logfile.txt with allowFileSharedWriting=False
