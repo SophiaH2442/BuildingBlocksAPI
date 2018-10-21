@@ -1,9 +1,8 @@
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Contracts.deps.json
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Contracts.dll
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Contracts.pdb
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.csprojAssemblyReference.cache
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.csproj.CoreCompileInputs.cache
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfoInputs.cache
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfo.cs
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.dll
-c:\users\sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.pdb
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Contracts.deps.json
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Contracts.dll
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Contracts.pdb
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfoInputs.cache
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfo.cs
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.dll
+C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.pdb

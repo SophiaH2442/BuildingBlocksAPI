@@ -29,6 +29,8 @@ namespace BuildingBlocksAPI
 
             services.ConfigureLoggerService();
 
+            services.ConfigureSqlContext(Configuration);
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

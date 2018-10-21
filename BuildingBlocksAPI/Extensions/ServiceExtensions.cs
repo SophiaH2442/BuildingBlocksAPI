@@ -2,6 +2,8 @@
 using LoggerService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace BuildingBlocksAPI.Extensions
 {
@@ -30,6 +32,12 @@ namespace BuildingBlocksAPI.Extensions
         public static void ConfigureLoggerService(this IServiceCollection services)
         {
             services.AddSingleton<ILoggerManager, LoggerManager>();
+        }
+
+        public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration config)
+        {
+            var connectionString = config["sqlconnection:connectionString"];
+            services.AddDbContext<RepositoryContext>(o => o.UseSqlServer(connectionString));
         }
     }
 }

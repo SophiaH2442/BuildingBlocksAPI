@@ -923,11 +923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\LoggerService.csproj",
+      "projectUniqueName": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\LoggerService.csproj",
       "projectName": "LoggerService",
-      "projectPath": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\LoggerService.csproj",
+      "projectPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\LoggerService.csproj",
       "packagesPath": "C:\\Users\\Sophia\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\obj\\",
+      "outputPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -946,8 +946,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj": {
-              "projectPath": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj"
+            "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj"
             }
           }
         }

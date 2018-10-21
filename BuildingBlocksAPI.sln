@@ -3,18 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocksAPI", "BuildingBlocksAPI\BuildingBlocksAPI.csproj", "{9F8A0BC5-7363-411F-ADD4-2E1E7FB93BF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocksAPI", "BuildingBlocksAPI\BuildingBlocksAPI.csproj", "{9F8A0BC5-7363-411F-ADD4-2E1E7FB93BF1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C2222F64-FC32-448E-90C2-396F047D39F0} = {C2222F64-FC32-448E-90C2-396F047D39F0}
+		{145595D8-3D2B-44C0-9B1F-59893C200319} = {145595D8-3D2B-44C0-9B1F-59893C200319}
 		{8CC7ADE3-6759-40C9-9565-D30301AF5B28} = {8CC7ADE3-6759-40C9-9565-D30301AF5B28}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{C2222F64-FC32-448E-90C2-396F047D39F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{C2222F64-FC32-448E-90C2-396F047D39F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{8CC7ADE3-6759-40C9-9565-D30301AF5B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{8CC7ADE3-6759-40C9-9565-D30301AF5B28}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C2222F64-FC32-448E-90C2-396F047D39F0} = {C2222F64-FC32-448E-90C2-396F047D39F0}
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{145595D8-3D2B-44C0-9B1F-59893C200319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +37,10 @@ Global
 		{8CC7ADE3-6759-40C9-9565-D30301AF5B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CC7ADE3-6759-40C9-9565-D30301AF5B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CC7ADE3-6759-40C9-9565-D30301AF5B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145595D8-3D2B-44C0-9B1F-59893C200319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145595D8-3D2B-44C0-9B1F-59893C200319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145595D8-3D2B-44C0-9B1F-59893C200319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145595D8-3D2B-44C0-9B1F-59893C200319}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
