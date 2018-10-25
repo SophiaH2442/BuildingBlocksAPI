@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -673,10 +683,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Entities >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -687,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj",
+      "projectPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\Contracts.csproj",
       "packagesPath": "C:\\Users\\Sophia\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\sophia\\documents\\visual studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\obj\\",
+      "outputPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -709,7 +725,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
