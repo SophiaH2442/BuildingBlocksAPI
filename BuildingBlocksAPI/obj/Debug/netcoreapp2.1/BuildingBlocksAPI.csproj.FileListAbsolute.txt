@@ -17,3 +17,7 @@ C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Building
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\obj\Debug\netcoreapp2.1\BuildingBlocksAPI.csproj.CopyComplete
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\obj\Debug\netcoreapp2.1\BuildingBlocksAPI.dll
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\obj\Debug\netcoreapp2.1\BuildingBlocksAPI.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1\Entities.dll
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1\Entities.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\BuildingBlocksAPI\bin\Debug\netcoreapp2.1\Repository.pdb

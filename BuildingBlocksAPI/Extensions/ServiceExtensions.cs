@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Entities;
+using Repository;
 
 namespace BuildingBlocksAPI.Extensions
 {
@@ -38,6 +40,11 @@ namespace BuildingBlocksAPI.Extensions
         {
             var connectionString = config["sqlconnection:connectionString"];
             services.AddDbContext<RepositoryContext>(o => o.UseSqlServer(connectionString));
+        }
+
+        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
 }

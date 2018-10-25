@@ -9,10 +9,12 @@ namespace BuildingBlocksAPI.Controllers
     public class ValuesController : ControllerBase
     {
         private ILoggerManager _logger;
+        private IRepositoryWrapper _repoWrapper;
 
-        public ValuesController(ILoggerManager logger)
+        public ValuesController(ILoggerManager logger, IRepositoryWrapper repoWrapper)
         {
             _logger = logger;
+            _repoWrapper = repoWrapper;
         }
 
         // GET api/values
@@ -23,6 +25,9 @@ namespace BuildingBlocksAPI.Controllers
             _logger.LogDebug("Here is the debug message from our values controller");
             _logger.LogWarn("Here is the warn message from our values controller");
             _logger.LogError("Here is the error message from our values controller");
+
+            var domesticCustomers = _repoWrapper.Customer.FindByCondition(x => x.CustomerId.Equals(1));
+            var orders = _repoWrapper.Order.FindAll();
 
             return new string[] { "value1", "value2" };
         }

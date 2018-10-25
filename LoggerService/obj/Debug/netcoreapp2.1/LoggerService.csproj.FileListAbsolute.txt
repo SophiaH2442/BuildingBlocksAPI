@@ -10,3 +10,7 @@ C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\LoggerSe
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.csproj.CopyComplete
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.dll
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\LoggerService\bin\Debug\netcoreapp2.1\Entities.dll
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\LoggerService\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\LoggerService\bin\Debug\netcoreapp2.1\Entities.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\LoggerService\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml

@@ -20,6 +20,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{145595D8-3D2B-44C0-9B1F-59893C200319}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{15C76CC6-7FB8-4BB0-ACBA-F411E103F944}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2222F64-FC32-448E-90C2-396F047D39F0} = {C2222F64-FC32-448E-90C2-396F047D39F0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,3 +9,4 @@ C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Entities
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Entities\obj\Debug\netcoreapp2.1\Entities.csproj.CopyComplete
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Entities\obj\Debug\netcoreapp2.1\Entities.dll
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Entities\obj\Debug\netcoreapp2.1\Entities.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Entities\obj\Debug\netcoreapp2.1\Entities.csprojAssemblyReference.cache

@@ -4392,6 +4392,20 @@
         "runtime": {
           "bin/placeholder/LoggerService.dll": {}
         }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -11617,6 +11631,11 @@
       "type": "project",
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11627,7 +11646,8 @@
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.4",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11668,6 +11688,9 @@
             },
             "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\LoggerService.csproj": {
               "projectPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\LoggerService\\LoggerService.csproj"
+            },
+            "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Sophia\\Documents\\Visual Studio 2017\\Projects\\BuildingBlocksAPI\\Repository\\Repository.csproj"
             }
           }
         }

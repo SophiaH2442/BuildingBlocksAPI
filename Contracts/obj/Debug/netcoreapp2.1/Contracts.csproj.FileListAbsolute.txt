@@ -6,3 +6,9 @@ C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contract
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfo.cs
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.dll
 C:\Users\Sophia\documents\visual studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Entities.dll
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Entities.pdb
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Contracts\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.csprojAssemblyReference.cache
+C:\Users\Sophia\Documents\Visual Studio 2017\Projects\BuildingBlocksAPI\Contracts\obj\Debug\netcoreapp2.1\Contracts.csproj.CopyComplete
